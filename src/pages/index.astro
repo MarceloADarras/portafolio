@@ -9,8 +9,8 @@ import imagenPerfil from '/public/media/marcelo_darras_pf.png';
 
 <Layout>
 	<div class="mt-[5%] flex flex-row justify-center items-center gap-4">
-		<img class="w-48 h-48 md:w-56 md:h-56 object-cover rounded-full shadow-lg animate-center-then-left md:absolute" src={imagenPerfil.src} alt="imagen perfil">
-		<div class="text-center md:text-left space-y-3 animate-text-reveal md:pl-[260px]">
+		<img class="w-48 h-48 md:w-56 md:h-56 object-cover rounded-full shadow-lg animate-center-then-left" src={imagenPerfil.src} alt="imagen perfil">
+		<div class="text-center md:text-left space-y-3 animate-text-reveal">
 			<h1 class="text-3xl md:text-4xl font-bold text-white tracking-tight">
 				¡Hola!, soy <span class="text-blue-400">Marcelo Darras</span>
 			</h1>
@@ -25,7 +25,7 @@ import imagenPerfil from '/public/media/marcelo_darras_pf.png';
     	</div>
 
 	</div>
-	<div class="flex flex-col justify-center items-center mt-[5%] gap-6">
+	<div class="flex flex-col justify-center items-center mt-[5%] gap-6 w-full max-w-6xl mx-auto px-4">
 		<h3 class="text-2xl font-bold text-blue-400">Algunos proyectos desarrollados</h3>
 	
 		<div class="flex flex-col justify-center items-center gap-6 md:flex-row md:flex-wrap">
@@ -53,20 +53,20 @@ import imagenPerfil from '/public/media/marcelo_darras_pf.png';
     @keyframes centerThenLeft {
         0% {
             opacity: 0;
-            left: 50%;
+            
             transform: translateX(-50%); 
         }
         /* Del 0% al 40% del tiempo, la imagen solo aparece en el centro */
         35% {
             opacity: 1;
-			left: 50%;
-            transform: translateX(-50%);
+			
+            transform: translateX(-50%); 
         }
         /* Del 40% al 100%, la imagen se desplaza del centro a su posición original (izquierda) */
         100% {
             opacity: 1;
-			left:25%;
-            transform: translateX(0%);
+            
+            transform: translateX(0);
         }
     }
 
@@ -75,6 +75,10 @@ import imagenPerfil from '/public/media/marcelo_darras_pf.png';
         0% {
             opacity: 0;
             transform: translateX(20px);
+        }
+        35% {
+            opacity: 1;
+            transform: translateX(20px);;
         }
         100% {
             opacity: 1;
@@ -87,13 +91,14 @@ import imagenPerfil from '/public/media/marcelo_darras_pf.png';
         .animate-center-then-left {
             /* Duración total de 2 segundos para que sea notorio y elegante */
             animation: centerThenLeft 2.2s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+            
         }
 
         .animate-text-reveal {
             opacity: 0;
             /* El texto aparece justo cuando la imagen empieza a moverse (40% de 2s = 0.8s) */
-            animation: textReveal 1.2s cubic-bezier(0.25, 1, 0.5, 1) forwards;
-            animation-delay: 0.9s; 
+            animation: textReveal 1s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+            animation-delay: 0.5s; 
         }
     }
 
@@ -109,7 +114,7 @@ import imagenPerfil from '/public/media/marcelo_darras_pf.png';
         .animate-text-reveal {
             opacity: 0;
             animation: fadeInSimple 1s ease forwards;
-            animation-delay: 0.5s;
+            animation-delay: 0.4s;
         }
     }
 </style>
