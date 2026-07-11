@@ -10,8 +10,8 @@ import Preview from '/public/media/preview.png';
 
 <Layout>
 	<div class="mt-[5%] flex flex-row justify-center items-center gap-4">
-		<img class="w-48 h-48 md:w-56 md:h-56 object-cover rounded-full shadow-lg animate-center-then-left" src={imagenPerfil.src} alt="imagen perfil">
-		<div class="text-center md:text-left space-y-3 animate-text-reveal">
+		<img class="relative z-10 w-48 h-48 md:w-56 md:h-56 object-cover rounded-full shadow-lg animate-center-then-left" src={imagenPerfil.src} alt="imagen perfil">
+		<div class="relative z-0 text-center md:text-left space-y-3 animate-text-reveal">
 			<h1 class="text-3xl md:text-4xl font-bold text-white tracking-tight">
 				¡Hola!, soy <span class="text-blue-400">Marcelo Darras</span>
 			</h1>
@@ -58,19 +58,14 @@ import Preview from '/public/media/preview.png';
         0% {
             opacity: 0;
             
-            transform: translateX(-50%); 
+            transform: translateY(50%); 
         }
         /* Del 0% al 40% del tiempo, la imagen solo aparece en el centro */
-        35% {
-            opacity: 1;
-			
-            transform: translateX(-50%); 
-        }
         /* Del 40% al 100%, la imagen se desplaza del centro a su posición original (izquierda) */
         100% {
             opacity: 1;
             
-            transform: translateX(0);
+            transform: translateY(0);
         }
     }
 
@@ -78,11 +73,7 @@ import Preview from '/public/media/preview.png';
     @keyframes textReveal {
         0% {
             opacity: 0;
-            transform: translateX(20px);
-        }
-        35% {
-            opacity: 1;
-            transform: translateX(20px);;
+            transform: translateX(-50%);
         }
         100% {
             opacity: 1;
@@ -94,7 +85,7 @@ import Preview from '/public/media/preview.png';
     @media (min-width: 768px) {
         .animate-center-then-left {
             /* Duración total de 2 segundos para que sea notorio y elegante */
-            animation: centerThenLeft 2.2s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+            animation: centerThenLeft 1.0s cubic-bezier(0.25, 1, 0.5, 1) forwards;
             
         }
 
