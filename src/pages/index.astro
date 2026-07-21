@@ -15,12 +15,12 @@ import Preview2 from '/public/media/preview_bey.png';
 		<img class="relative z-10 w-48 h-48 md:w-56 md:h-56 object-cover rounded-full shadow-lg animate-center-then-left" src={imagenPerfil.src} alt="imagen perfil">
 		<div class="relative z-0 text-center md:text-left space-y-3 animate-text-reveal">
 			<h1 class="text-3xl md:text-4xl font-bold text-white tracking-tight">
-				¡Hola!, soy <span class="text-blue-400">Marcelo Darras</span>
+				¡Hola!, soy <span class="text-red-300">Marcelo Darras</span>
 			</h1>
-			<p class="text-lg text-slate-400 font-medium">
+			<p class="text-lg text-slate-600 font-medium">
 				Ingeniero en Informática
 			</p>
-			<p class="text-slate-400 max-w-xl leading-relaxed">
+			<p class="text-slate-600 max-w-xl leading-relaxed">
 				Soy un profesional enérgico, comprometido y con gran disposición para enfrentar desafíos técnicos. 
 				A continuación, te invito a explorar el repertorio de proyectos en los que he trabajado.
 			</p>
@@ -28,161 +28,431 @@ import Preview2 from '/public/media/preview_bey.png';
     	</div>
 
 	</div>
-    <div class="flex justify-center my-8 sticky top-4 z-50 px-4 aparecer-lado">
-        <ul class="flex flex-wrap justify-center items-center gap-1 md:gap-2 bg-slate-900/80 border border-slate-800 backdrop-blur-md p-1.5 rounded-2xl shadow-xl shadow-black/20 text-sm font-medium">
-        <li>
-            <a href="#experiencia" class="px-3 py-1.5 rounded-xl text-slate-300 hover:text-white hover:bg-slate-800/80 transition-all block">
-                Experiencia
-            </a>
-        </li>
-        <li>
-            <a href="#proyectos" class="px-3 py-1.5 rounded-xl text-slate-300 hover:text-white hover:bg-slate-800/80 transition-all block">
-                Proyectos
-            </a>
-        </li>
-        <li>
-            <a href="#lenguajes" class="px-3 py-1.5 rounded-xl text-slate-300 hover:text-white hover:bg-slate-800/80 transition-all block">
-                Lenguajes
-            </a>
-        </li>
-        <li>
-            <a href="#frameworks" class="px-3 py-1.5 rounded-xl text-slate-300 hover:text-white hover:bg-slate-800/80 transition-all block">
-                Frameworks
-            </a>
-        </li>
-        <li>
-            <a href="#herramientas" class="px-3 py-1.5 rounded-xl text-slate-300 hover:text-white hover:bg-slate-800/80 transition-all block">
-                Herramientas
-            </a>
-        </li>
-    </ul>
-    </div>
-    <div class="space-y-20 max-w-4xl mx-auto px-6 mb-20 aparecer-abajo">
+    <main class="max-w-4xl mx-auto px-6 relative">
+        <div class="flex justify-center my-8 sticky top-4 z-50 px-4 aparecer-lado">
+            <ul class="flex flex-wrap justify-center items-center gap-1 md:gap-2 bg-slate-900/80 border border-slate-800 backdrop-blur-md p-1.5 rounded-2xl shadow-xl shadow-black/20 text-sm font-medium">
+                <li>
+                    <a href="#experiencia" class="px-3 py-1.5 rounded-xl text-slate-300 hover:text-white hover:bg-slate-800/80 transition-all block">
+                        Experiencia
+                    </a>
+                </li>
+                <li>
+                    <a href="#proyectos" class="px-3 py-1.5 rounded-xl text-slate-300 hover:text-white hover:bg-slate-800/80 transition-all block">
+                        Proyectos
+                    </a>
+                </li>
+                <li>
+                    <a href="#lenguajes" class="px-3 py-1.5 rounded-xl text-slate-300 hover:text-white hover:bg-slate-800/80 transition-all block">
+                        Lenguajes
+                    </a>
+                </li>
+                <li>
+                    <a href="#frameworks" class="px-3 py-1.5 rounded-xl text-slate-300 hover:text-white hover:bg-slate-800/80 transition-all block">
+                        Frameworks
+                    </a>
+                </li>
+                <li>
+                    <a href="#herramientas" class="px-3 py-1.5 rounded-xl text-slate-300 hover:text-white hover:bg-slate-800/80 transition-all block">
+                        Herramientas
+                    </a>
+                </li>
+                <li>
+                    <a href="#idiomas" class="px-3 py-1.5 rounded-xl text-slate-300 hover:text-white hover:bg-slate-800/80 transition-all block">
+                        Idiomas
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="space-y-20 max-w-4xl mx-auto px-6 mb-20 aparecer-abajo">
 
-        <!-- 3. Sección Experiencia (Estilo Timeline) -->
-        <section id="experiencia" class="scroll-mt-24">
-            <h2 class="text-2xl md:text-3xl font-bold text-white tracking-tight mb-8 flex items-center gap-3">
-                <Icon name="lucide:briefcase" class="w-7 h-7 text-blue-400" />
-                Experiencia Laboral
-            </h2>
+            <!-- 3. Sección Experiencia (Estilo Timeline) -->
+            <section id="experiencia" class="scroll-mt-24">
+                <h2 class="text-2xl md:text-3xl font-bold text-white tracking-tight mb-8 flex items-center gap-3">
+                    <Icon name="lucide:briefcase" class="w-7 h-7 text-blue-400" />
+                    Experiencia Laboral
+                </h2>
 
-            <div class="relative border-l border-slate-800 ml-3 space-y-8 pl-6">
-                <!-- Item Experiencia 1 -->
-                <div class="relative group">
-                    <!-- Punto en el Timeline -->
-                    <div class="absolute -left-[31px] top-1.5 w-3 h-3 bg-blue-500 rounded-full border-4 border-slate-950 group-hover:scale-125 transition-transform"></div>
+                <div class="relative border-l border-slate-800 ml-3 space-y-8 pl-6">
+                    <!-- Item Experiencia 1 -->
+                    <div class="relative group">
+                        <!-- Punto en el Timeline -->
+                        <div class="absolute -left-[31px] top-1.5 w-3 h-3 bg-blue-500 rounded-full border-4 border-slate-950 group-hover:scale-125 transition-transform"></div>
+                        
+                        <div class="bg-slate-900/60 border border-slate-800/80 p-5 rounded-2xl space-y-2 backdrop-blur-sm hover:border-slate-700 transition-colors">
+                            <div class="flex flex-wrap justify-between items-start gap-2">
+                                <h3 class="text-xl font-bold text-white">Solcor Chile</h3>
+                                <span class="text-xs font-semibold text-blue-400 bg-blue-500/10 border border-blue-500/20 px-3 py-1 rounded-full">
+                                    Septiembre 2025 - Diciembre 2025
+                                </span>
+                            </div>
+                            <p class="text-sm font-medium text-slate-300">Desarrollador Full-Stack (Practicante)</p>
+                            <p class="text-slate-400 text-sm leading-relaxed">
+                                Desarrollo e implementación de soluciones web utilizando <strong class="text-slate-200">Vue.js</strong> para interfaces dinámicas en el frontend y <strong class="text-slate-200">Django REST Framework</strong> para la arquitectura de APIs robustas en el backend.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 4. Sección Proyectos -->
+            <section id="proyectos" class="scroll-mt-24">
+                <h2 class="text-2xl md:text-3xl font-bold text-white tracking-tight mb-8 flex items-center gap-3">
+                    <Icon name="lucide:folder-git-2" class="w-7 h-7 text-blue-400" />
+                    Proyectos Destacados
+                </h2>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 justify-items-center">
+                    <ProjectCard 
+                        imagen={Preview.src}
+                        titulo="Kuma Store"
+                        descripcion="Una tienda e-commerce para la venta de artículos para mascotas con catálogo y gestión de productos."
+                        tecnologias={["simple-icons:html5", "simple-icons:css3", "simple-icons:javascript", "simple-icons:django", "simple-icons:sqlite"]}
+                        linkGithub="https://github.com/Marcelo200221/KumaStore.git"
+                        linkProyecto="https://kumastore.onrender.com/"
+                    />
                     
-                    <div class="bg-slate-900/60 border border-slate-800/80 p-5 rounded-2xl space-y-2 backdrop-blur-sm hover:border-slate-700 transition-colors">
-                        <div class="flex flex-wrap justify-between items-start gap-2">
-                            <h3 class="text-xl font-bold text-white">Solcor Chile</h3>
-                            <span class="text-xs font-semibold text-blue-400 bg-blue-500/10 border border-blue-500/20 px-3 py-1 rounded-full">
-                                Septiembre 2025 - Diciembre 2025
+                    <ProjectCard 
+                        imagen={Preview2.src}
+                        titulo="Project Bey"
+                        descripcion="Página web interactiva creada como foro y comunidad para fanáticos de Beyblade."
+                        tecnologias={["simple-icons:html5", "simple-icons:css3", "simple-icons:typescript", "simple-icons:django", "simple-icons:vuedotjs", "simple-icons:mysql"]}
+                        linkGithub="https://github.com/Marcelo200221/Project-bey.git"
+                        linkProyecto="https://project-beystory-one.vercel.app/home"
+                    />
+                </div>
+            </section>
+
+            <!-- 5. Sección Lenguajes (Bento Grid) -->
+            <section id="lenguajes" class="scroll-mt-24">
+                <h2 class="text-2xl md:text-3xl font-bold text-white tracking-tight mb-8 flex items-center gap-3">
+                    <Icon name="lucide:code-2" class="w-7 h-7 text-blue-400" />
+                    Lenguajes de Programación
+                </h2>
+
+                <div class="grid grid-cols-2 sm:grid-cols-3 gap-4">
+                    
+                    <!-- Python -->
+                    <div class="bg-slate-900/60 border border-slate-800 p-4 rounded-xl flex flex-col gap-3 hover:border-slate-700 transition-colors">
+                        <div class="flex items-center justify-between">
+                            <Icon name="simple-icons:python" class="w-6 h-6 text-blue-400" />
+                            <span class="text-xs font-semibold bg-blue-500/10 text-blue-400 px-2 py-0.5 rounded-md">Avanzado</span>
+                        </div>
+                        <span class="font-bold text-white">Python</span>
+                    </div>
+
+                    <!-- JavaScript -->
+                    <div class="bg-slate-900/60 border border-slate-800 p-4 rounded-xl flex flex-col gap-3 hover:border-slate-700 transition-colors">
+                        <div class="flex items-center justify-between">
+                            <Icon name="simple-icons:javascript" class="w-6 h-6 text-yellow-400" />
+                            <span class="text-xs font-semibold bg-blue-500/10 text-blue-400 px-2 py-0.5 rounded-md">Avanzado</span>
+                        </div>
+                        <span class="font-bold text-white">JavaScript</span>
+                    </div>
+
+                    <!-- HTML5 -->
+                    <div class="bg-slate-900/60 border border-slate-800 p-4 rounded-xl flex flex-col gap-3 hover:border-slate-700 transition-colors">
+                        <div class="flex items-center justify-between">
+                            <Icon name="simple-icons:html5" class="w-6 h-6 text-orange-500" />
+                            <span class="text-xs font-semibold bg-blue-500/10 text-blue-400 px-2 py-0.5 rounded-md">Avanzado</span>
+                        </div>
+                        <span class="font-bold text-white">HTML</span>
+                    </div>
+
+                    <!-- CSS3 -->
+                    <div class="bg-slate-900/60 border border-slate-800 p-4 rounded-xl flex flex-col gap-3 hover:border-slate-700 transition-colors">
+                        <div class="flex items-center justify-between">
+                            <Icon name="simple-icons:css3" class="w-6 h-6 text-blue-500" />
+                            <span class="text-xs font-semibold bg-blue-500/10 text-blue-400 px-2 py-0.5 rounded-md">Avanzado</span>
+                        </div>
+                        <span class="font-bold text-white">CSS</span>
+                    </div>
+
+                    <!-- PHP -->
+                    <div class="bg-slate-900/60 border border-slate-800 p-4 rounded-xl flex flex-col gap-3 hover:border-slate-700 transition-colors">
+                        <div class="flex items-center justify-between">
+                            <Icon name="simple-icons:php" class="w-6 h-6 text-indigo-400" />
+                            <span class="text-xs font-semibold bg-slate-800 text-slate-300 px-2 py-0.5 rounded-md">Intermedio</span>
+                        </div>
+                        <span class="font-bold text-white">PHP</span>
+                    </div>
+
+                    <!-- Java -->
+                    <div class="bg-slate-900/60 border border-slate-800 p-4 rounded-xl flex flex-col gap-3 hover:border-slate-700 transition-colors">
+                        <div class="flex items-center justify-between">
+                            <Icon name="simple-icons:openjdk" class="w-6 h-6 text-red-400" />
+                            <span class="text-xs font-semibold bg-slate-800 text-slate-300 px-2 py-0.5 rounded-md">Intermedio</span>
+                        </div>
+                        <span class="font-bold text-white">Java</span>
+                    </div>
+
+                </div>
+            </section>
+
+            <section id="frameworks" class="scroll-mt-24">
+                <!-- Encabezado con icono de capas/frameworks -->
+                <h2 class="text-2xl md:text-3xl font-bold text-white tracking-tight mb-8 flex items-center gap-3">
+                    <Icon name="lucide:layers" class="w-7 h-7 text-blue-400" />
+                    Frameworks & Librerías
+                </h2>
+
+                <!-- Grid de 2 columnas en escritorios para tarjetas más amplias -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                    
+                    <!-- Django (Avanzado) -->
+                    <div class="bg-slate-900/80 border border-slate-800/80 hover:border-emerald-500/40 p-4 rounded-2xl flex flex-col justify-between gap-4 transition-all duration-300 hover:shadow-lg hover:shadow-emerald-500/5 group">
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center gap-3">
+                                <div class="p-2 bg-emerald-950/60 border border-emerald-500/20 rounded-xl group-hover:scale-110 transition-transform">
+                                    <!-- Color oficial de Django -->
+                                    <Icon name="simple-icons:django" class="w-6 h-6 text-emerald-400" />
+                                </div>
+                                <span class="font-bold text-white text-lg">Django</span>
+                            </div>
+                            <span class="text-xs font-semibold bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 px-2.5 py-1 rounded-full">
+                                Avanzado
                             </span>
                         </div>
-                        <p class="text-sm font-medium text-slate-300">Desarrollador Full-Stack (Practicante)</p>
-                        <p class="text-slate-400 text-sm leading-relaxed">
-                            Desarrollo e implementación de soluciones web utilizando <strong class="text-slate-200">Vue.js</strong> para interfaces dinámicas en el frontend y <strong class="text-slate-200">Django REST Framework</strong> para la arquitectura de APIs robustas en el backend.
-                        </p>
+                        <!-- Barra de progreso visual -->
+                        <div class="w-full bg-slate-800/80 h-1.5 rounded-full overflow-hidden">
+                            <div class="bg-emerald-400 h-full w-[85%] rounded-full"></div>
+                        </div>
                     </div>
-                </div>
-            </div>
-        </section>
 
-        <!-- 4. Sección Proyectos -->
-        <section id="proyectos" class="scroll-mt-24">
-            <h2 class="text-2xl md:text-3xl font-bold text-white tracking-tight mb-8 flex items-center gap-3">
-                <Icon name="lucide:folder-git-2" class="w-7 h-7 text-blue-400" />
-                Proyectos Destacados
-            </h2>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 justify-items-center">
-                <ProjectCard 
-                    imagen={Preview.src}
-                    titulo="Kuma Store"
-                    descripcion="Una tienda e-commerce para la venta de artículos para mascotas con catálogo y gestión de productos."
-                    tecnologias={["simple-icons:html5", "simple-icons:css3", "simple-icons:javascript", "simple-icons:django", "simple-icons:sqlite"]}
-                    linkGithub="https://github.com/Marcelo200221/KumaStore.git"
-                    linkProyecto="https://kumastore.onrender.com/"
-                />
-                
-                <ProjectCard 
-                    imagen={Preview2.src}
-                    titulo="Project Bey"
-                    descripcion="Página web interactiva creada como foro y comunidad para fanáticos de Beyblade."
-                    tecnologias={["simple-icons:html5", "simple-icons:css3", "simple-icons:typescript", "simple-icons:django", "simple-icons:vuedotjs", "simple-icons:mysql"]}
-                    linkGithub="https://github.com/Marcelo200221/Project-bey.git"
-                    linkProyecto="https://project-beystory-one.vercel.app/home"
-                />
-            </div>
-        </section>
-
-        <!-- 5. Sección Lenguajes (Bento Grid) -->
-        <section id="lenguajes" class="scroll-mt-24">
-            <h2 class="text-2xl md:text-3xl font-bold text-white tracking-tight mb-8 flex items-center gap-3">
-                <Icon name="lucide:code-2" class="w-7 h-7 text-blue-400" />
-                Lenguajes de Programación
-            </h2>
-
-            <div class="grid grid-cols-2 sm:grid-cols-3 gap-4">
-                
-                <!-- Python -->
-                <div class="bg-slate-900/60 border border-slate-800 p-4 rounded-xl flex flex-col gap-3 hover:border-slate-700 transition-colors">
-                    <div class="flex items-center justify-between">
-                        <Icon name="simple-icons:python" class="w-6 h-6 text-blue-400" />
-                        <span class="text-xs font-semibold bg-blue-500/10 text-blue-400 px-2 py-0.5 rounded-md">Avanzado</span>
+                    <!-- Vue.js (Intermedio) -->
+                    <div class="bg-slate-900/80 border border-slate-800/80 hover:border-emerald-400/40 p-4 rounded-2xl flex flex-col justify-between gap-4 transition-all duration-300 hover:shadow-lg hover:shadow-emerald-400/5 group">
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center gap-3">
+                                <div class="p-2 bg-emerald-950/40 border border-emerald-400/20 rounded-xl group-hover:scale-110 transition-transform">
+                                    <!-- Color oficial de Vue -->
+                                    <Icon name="simple-icons:vuedotjs" class="w-6 h-6 text-emerald-400" />
+                                </div>
+                                <span class="font-bold text-white text-lg">Vue.js</span>
+                            </div>
+                            <span class="text-xs font-semibold bg-blue-500/10 text-blue-400 border border-blue-500/20 px-2.5 py-1 rounded-full">
+                                Intermedio
+                            </span>
+                        </div>
+                        <div class="w-full bg-slate-800/80 h-1.5 rounded-full overflow-hidden">
+                            <div class="bg-blue-400 h-full w-[65%] rounded-full"></div>
+                        </div>
                     </div>
-                    <span class="font-bold text-white">Python</span>
-                </div>
 
-                <!-- JavaScript -->
-                <div class="bg-slate-900/60 border border-slate-800 p-4 rounded-xl flex flex-col gap-3 hover:border-slate-700 transition-colors">
-                    <div class="flex items-center justify-between">
-                        <Icon name="simple-icons:javascript" class="w-6 h-6 text-yellow-400" />
-                        <span class="text-xs font-semibold bg-blue-500/10 text-blue-400 px-2 py-0.5 rounded-md">Avanzado</span>
+                    <!-- Ionic (Intermedio) -->
+                    <div class="bg-slate-900/80 border border-slate-800/80 hover:border-sky-400/40 p-4 rounded-2xl flex flex-col justify-between gap-4 transition-all duration-300 hover:shadow-lg hover:shadow-sky-400/5 group">
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center gap-3">
+                                <div class="p-2 bg-sky-950/40 border border-sky-400/20 rounded-xl group-hover:scale-110 transition-transform">
+                                    <!-- Color oficial de Ionic -->
+                                    <Icon name="simple-icons:ionic" class="w-6 h-6 text-sky-400" />
+                                </div>
+                                <span class="font-bold text-white text-lg">Ionic</span>
+                            </div>
+                            <span class="text-xs font-semibold bg-blue-500/10 text-blue-400 border border-blue-500/20 px-2.5 py-1 rounded-full">
+                                Intermedio
+                            </span>
+                        </div>
+                        <div class="w-full bg-slate-800/80 h-1.5 rounded-full overflow-hidden">
+                            <div class="bg-blue-400 h-full w-[60%] rounded-full"></div>
+                        </div>
                     </div>
-                    <span class="font-bold text-white">JavaScript</span>
-                </div>
 
-                <!-- HTML5 -->
-                <div class="bg-slate-900/60 border border-slate-800 p-4 rounded-xl flex flex-col gap-3 hover:border-slate-700 transition-colors">
-                    <div class="flex items-center justify-between">
-                        <Icon name="simple-icons:html5" class="w-6 h-6 text-orange-500" />
-                        <span class="text-xs font-semibold bg-blue-500/10 text-blue-400 px-2 py-0.5 rounded-md">Avanzado</span>
+                    <!-- Next.js (Básico) -->
+                    <div class="bg-slate-900/80 border border-slate-800/80 hover:border-slate-600 p-4 rounded-2xl flex flex-col justify-between gap-4 transition-all duration-300 group">
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center gap-3">
+                                <div class="p-2 bg-slate-800 border border-slate-700 rounded-xl group-hover:scale-110 transition-transform">
+                                    <!-- Icono en blanco/blanco traslúcido para Next.js -->
+                                    <Icon name="simple-icons:nextdotjs" class="w-6 h-6 text-white" />
+                                </div>
+                                <span class="font-bold text-white text-lg">Next.js</span>
+                            </div>
+                            <span class="text-xs font-semibold bg-slate-800 text-slate-300 border border-slate-700 px-2.5 py-1 rounded-full">
+                                Básico
+                            </span>
+                        </div>
+                        <div class="w-full bg-slate-800/80 h-1.5 rounded-full overflow-hidden">
+                            <div class="bg-slate-500 h-full w-[35%] rounded-full"></div>
+                        </div>
                     </div>
-                    <span class="font-bold text-white">HTML</span>
-                </div>
 
-                <!-- CSS3 -->
-                <div class="bg-slate-900/60 border border-slate-800 p-4 rounded-xl flex flex-col gap-3 hover:border-slate-700 transition-colors">
-                    <div class="flex items-center justify-between">
-                        <Icon name="simple-icons:css3" class="w-6 h-6 text-blue-500" />
-                        <span class="text-xs font-semibold bg-blue-500/10 text-blue-400 px-2 py-0.5 rounded-md">Avanzado</span>
+                    <!-- Laravel (Básico) -->
+                    <div class="bg-slate-900/80 border border-slate-800/80 hover:border-red-500/40 p-4 rounded-2xl flex flex-col justify-between gap-4 transition-all duration-300 group">
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center gap-3">
+                                <div class="p-2 bg-red-950/30 border border-red-500/20 rounded-xl group-hover:scale-110 transition-transform">
+                                    <!-- Color oficial de Laravel -->
+                                    <Icon name="simple-icons:laravel" class="w-6 h-6 text-red-500" />
+                                </div>
+                                <span class="font-bold text-white text-lg">Laravel</span>
+                            </div>
+                            <span class="text-xs font-semibold bg-slate-800 text-slate-300 border border-slate-700 px-2.5 py-1 rounded-full">
+                                Básico
+                            </span>
+                        </div>
+                        <div class="w-full bg-slate-800/80 h-1.5 rounded-full overflow-hidden">
+                            <div class="bg-slate-500 h-full w-[35%] rounded-full"></div>
+                        </div>
                     </div>
-                    <span class="font-bold text-white">CSS</span>
-                </div>
 
-                <!-- PHP -->
-                <div class="bg-slate-900/60 border border-slate-800 p-4 rounded-xl flex flex-col gap-3 hover:border-slate-700 transition-colors">
-                    <div class="flex items-center justify-between">
-                        <Icon name="simple-icons:php" class="w-6 h-6 text-indigo-400" />
-                        <span class="text-xs font-semibold bg-slate-800 text-slate-300 px-2 py-0.5 rounded-md">Intermedio</span>
+                    <!-- Astro (Básico) -->
+                    <div class="bg-slate-900/80 border border-slate-800/80 hover:border-orange-500/40 p-4 rounded-2xl flex flex-col justify-between gap-4 transition-all duration-300 group">
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center gap-3">
+                                <div class="p-2 bg-orange-950/30 border border-orange-500/20 rounded-xl group-hover:scale-110 transition-transform">
+                                    <!-- Color oficial de Astro -->
+                                    <Icon name="simple-icons:astro" class="w-6 h-6 text-orange-400" />
+                                </div>
+                                <span class="font-bold text-white text-lg">Astro</span>
+                            </div>
+                            <span class="text-xs font-semibold bg-slate-800 text-slate-300 border border-slate-700 px-2.5 py-1 rounded-full">
+                                Básico
+                            </span>
+                        </div>
+                        <div class="w-full bg-slate-800/80 h-1.5 rounded-full overflow-hidden">
+                            <div class="bg-slate-500 h-full w-[35%] rounded-full"></div>
+                        </div>
                     </div>
-                    <span class="font-bold text-white">PHP</span>
-                </div>
 
-                <!-- Java -->
-                <div class="bg-slate-900/60 border border-slate-800 p-4 rounded-xl flex flex-col gap-3 hover:border-slate-700 transition-colors">
-                    <div class="flex items-center justify-between">
-                        <Icon name="simple-icons:openjdk" class="w-6 h-6 text-red-400" />
-                        <span class="text-xs font-semibold bg-slate-800 text-slate-300 px-2 py-0.5 rounded-md">Intermedio</span>
+                </div>
+            </section>
+
+            <section id="herramientas" class="scroll-mt-24">
+                <!-- Encabezado con icono de herramientas -->
+                <h2 class="text-2xl md:text-3xl font-bold text-white tracking-tight mb-8 flex items-center gap-3">
+                    <Icon name="lucide:wrench" class="w-7 h-7 text-blue-400" />
+                    Herramientas & Entornos
+                </h2>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    
+                    <!-- Git / GitHub -->
+                    <div class="bg-slate-900/80 border border-slate-800/80 hover:border-orange-500/40 p-4 rounded-2xl flex items-center justify-between gap-4 transition-all duration-300 hover:shadow-lg hover:shadow-orange-500/5 group">
+                        <div class="flex items-center gap-3.5">
+                            <div class="p-2.5 bg-orange-950/40 border border-orange-500/20 rounded-xl group-hover:scale-110 transition-transform">
+                                <Icon name="simple-icons:git" class="w-6 h-6 text-orange-500" />
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-white text-base">Git / GitHub</h3>
+                                <p class="text-xs text-slate-400">Control de versiones</p>
+                            </div>
+                        </div>
+                        <span class="text-xs font-semibold bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 px-3 py-1 rounded-full shrink-0">
+                            Avanzado
+                        </span>
                     </div>
-                    <span class="font-bold text-white">Java</span>
+
+                    <!-- VS Code -->
+                    <div class="bg-slate-900/80 border border-slate-800/80 hover:border-blue-500/40 p-4 rounded-2xl flex items-center justify-between gap-4 transition-all duration-300 hover:shadow-lg hover:shadow-blue-500/5 group">
+                        <div class="flex items-center gap-3.5">
+                            <div class="p-2.5 bg-blue-950/40 border border-blue-500/20 rounded-xl group-hover:scale-110 transition-transform">
+                                <Icon name="simple-icons:visualstudiocode" class="w-6 h-6 text-blue-400" />
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-white text-base">VS Code</h3>
+                                <p class="text-xs text-slate-400">IDE principal</p>
+                            </div>
+                        </div>
+                        <span class="text-xs font-semibold bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 px-3 py-1 rounded-full shrink-0">
+                            Avanzado
+                        </span>
+                    </div>
+
+                    <!-- MySQL -->
+                    <div class="bg-slate-900/80 border border-slate-800/80 hover:border-cyan-500/40 p-4 rounded-2xl flex items-center justify-between gap-4 transition-all duration-300 hover:shadow-lg hover:shadow-cyan-500/5 group">
+                        <div class="flex items-center gap-3.5">
+                            <div class="p-2.5 bg-cyan-950/40 border border-cyan-500/20 rounded-xl group-hover:scale-110 transition-transform">
+                                <Icon name="simple-icons:mysql" class="w-6 h-6 text-cyan-400" />
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-white text-base">MySQL</h3>
+                                <p class="text-xs text-slate-400">Base de datos relacional</p>
+                            </div>
+                        </div>
+                        <span class="text-xs font-semibold bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 px-3 py-1 rounded-full shrink-0">
+                            Avanzado
+                        </span>
+                    </div>
+
+                    <!-- Trello -->
+                    <div class="bg-slate-900/80 border border-slate-800/80 hover:border-sky-500/40 p-4 rounded-2xl flex items-center justify-between gap-4 transition-all duration-300 hover:shadow-lg hover:shadow-sky-500/5 group">
+                        <div class="flex items-center gap-3.5">
+                            <div class="p-2.5 bg-sky-950/40 border border-sky-500/20 rounded-xl group-hover:scale-110 transition-transform">
+                                <Icon name="simple-icons:trello" class="w-6 h-6 text-sky-400" />
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-white text-base">Trello</h3>
+                                <p class="text-xs text-slate-400">Gestión de proyectos (Agile)</p>
+                            </div>
+                        </div>
+                        <span class="text-xs font-semibold bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 px-3 py-1 rounded-full shrink-0">
+                            Avanzado
+                        </span>
+                    </div>
+
                 </div>
+            </section>
 
-            </div>
-        </section>
+            <section id="idiomas" class="scroll-mt-24">
+                <!-- Encabezado con icono de idiomas / comunicación -->
+                <h2 class="text-2xl md:text-3xl font-bold text-white tracking-tight mb-8 flex items-center gap-3">
+                    <Icon name="lucide:languages" class="w-7 h-7 text-blue-400" />
+                    Idiomas
+                </h2>
 
-    </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    
+                    <!-- Español (Nativo) -->
+                    <div class="bg-slate-900/80 border border-slate-800/80 hover:border-blue-500/40 p-5 rounded-2xl flex flex-col justify-between gap-4 transition-all duration-300 hover:shadow-lg hover:shadow-blue-500/5 group">
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center gap-3">
+                                <div class="p-2.5 bg-blue-950/50 border border-blue-500/30 rounded-xl text-blue-400 group-hover:scale-110 transition-transform">
+                                    <Icon name="lucide:message-square" class="w-6 h-6" />
+                                </div>
+                                <div>
+                                    <h3 class="font-bold text-white text-lg">Español</h3>
+                                    <p class="text-xs text-slate-400">Lengua materna</p>
+                                </div>
+                            </div>
+                            <span class="text-xs font-semibold bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 px-3 py-1 rounded-full">
+                                Nativo
+                            </span>
+                        </div>
+                        
+                        <!-- Barra de nivel 100% -->
+                        <div class="w-full bg-slate-800/80 h-1.5 rounded-full overflow-hidden">
+                            <div class="bg-emerald-400 h-full w-full rounded-full"></div>
+                        </div>
+                    </div>
+
+                    <!-- Inglés (Típico B1/B2 o según tu nivel real) -->
+                    <div class="bg-slate-900/80 border border-slate-800/80 hover:border-indigo-500/40 p-5 rounded-2xl flex flex-col justify-between gap-4 transition-all duration-300 hover:shadow-lg hover:shadow-indigo-500/5 group">
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center gap-3">
+                                <div class="p-2.5 bg-indigo-950/50 border border-indigo-500/30 rounded-xl text-indigo-400 group-hover:scale-110 transition-transform">
+                                    <Icon name="lucide:globe" class="w-6 h-6" />
+                                </div>
+                                <div>
+                                    <h3 class="font-bold text-white text-lg">Inglés</h3>
+                                    <p class="text-xs text-slate-400">Lectura técnica y conversación</p>
+                                </div>
+                            </div>
+                            <!-- Cambia el nivel (B2, Intermedio, etc.) según corresponda -->
+                            <span class="text-xs font-semibold bg-blue-500/10 text-blue-400 border border-blue-500/20 px-3 py-1 rounded-full">
+                                Intermedio / B2 (TOEIC)
+                            </span>
+                        </div>
+                        
+                        <!-- Barra de nivel (~70%) -->
+                        <div class="w-full bg-slate-800/80 h-1.5 rounded-full overflow-hidden">
+                            <div class="bg-blue-400 h-full w-[70%] rounded-full"></div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+        </div>
+    </main>
 </Layout>
 
 <style>
@@ -193,8 +463,6 @@ import Preview2 from '/public/media/preview_bey.png';
             
             transform: translateY(50%); 
         }
-        /* Del 0% al 40% del tiempo, la imagen solo aparece en el centro */
-        /* Del 40% al 100%, la imagen se desplaza del centro a su posición original (izquierda) */
         100% {
             opacity: 1;
             
@@ -217,14 +485,12 @@ import Preview2 from '/public/media/preview_bey.png';
     /* Aplicamos las animaciones solo en pantallas de escritorio (md) */
     @media (min-width: 768px) {
         .animate-center-then-left {
-            /* Duración total de 2 segundos para que sea notorio y elegante */
             animation: centerThenLeft 1.0s cubic-bezier(0.25, 1, 0.5, 1) forwards;
             
         }
 
         .animate-text-reveal {
             opacity: 0;
-            /* El texto aparece justo cuando la imagen empieza a moverse (40% de 2s = 0.8s) */
             animation: textReveal 1s cubic-bezier(0.25, 1, 0.5, 1) forwards;
             animation-delay: 0.5s; 
         }
