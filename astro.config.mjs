@@ -14,7 +14,8 @@ export default defineConfig({
         tailwind(),
         astroIcon({
             include: {
-                'simple-icons': ['*']
+                'simple-icons': ['*'],
+                'lucide': ['*']
             }
         })
     ]
